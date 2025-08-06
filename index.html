@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Proyecto Web</title>
+
+    <!-- Tailwind desde CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ Conexión al CSS en src/Styles.css -->
+    <link rel="stylesheet" href="../src/Styles.css" />
+  </head>
+  <body class="bg-gray-900 text-white p-6">
+
+    <h1 class="text-3xl font-bold mb-4">🎮 Mi Proyecto Gamer</h1>
+    <div id="root">
+      <!-- Aquí se inyectará el contenido desde JS -->
+    </div>
+
+    <!-- ✅ Conexión al archivo JS principal -->
+    <script type="module" src="../src/mock/index.js"></script>
+  </body>
+</html>
