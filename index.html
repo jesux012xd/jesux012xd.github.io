@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi Proyecto Web</title>
+  <title>Proyecto sin React</title>
 
   <!-- Tailwind desde CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- CSS local en la raíz -->
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-gray-900 text-white p-6">
   <h1 class="text-3xl font-bold mb-4">🎮 Mi Proyecto Gamer</h1>
   <div id="root">
-    <!-- Aquí se inyectará el contenido desde JS -->
+    <!-- Contenido generado con JS -->
   </div>
 
-  <!-- JS local en la raíz -->
-  <script type="module" src="index.js"></script>
+  <script>
+    // Aquí va tu JS directamente
+    document.getElementById('root').innerHTML = `
+      <div class="p-4 bg-gray-800 rounded">
+        <p class="text-lg">JS cargado correctamente ✅</p>
+      </div>
+    `;
+  </script>
 </body>
 </html>
